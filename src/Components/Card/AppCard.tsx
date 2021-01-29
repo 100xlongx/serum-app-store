@@ -9,8 +9,8 @@ export interface AppCardProps {
 }
 
 const StyledCard = styled(Card)`
-    height: 250px;
-    width: 250px;
+    height: auto;
+    width: auto;
 `;
 
 const CardImage = styled.img`
@@ -20,7 +20,7 @@ const CardImage = styled.img`
 const AppCard: FC<AppCardProps> = ({title, desc, launchURL}) => {
     return <StyledCard onClick={() => window.location.assign(launchURL.href)} interactive={true} elevation={Elevation.TWO} >
         <h5>{title}</h5>
-        <CardImage src='https://via.placeholder.com/150x75.png?text=Placeholder'/>
+        <CardImage src='https://via.placeholder.com/250x125.png?text=Placeholder'/>
         <p>{desc}</p>
     </StyledCard>
 }
