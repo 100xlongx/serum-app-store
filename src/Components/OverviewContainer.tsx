@@ -48,6 +48,18 @@ const Categories : Array<CategoryProps> = [
             },
         ]
     },
+    {
+        categoryName: "NFT",
+        desc: `Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
+        apps: [
+            {
+                title: "Solible",
+                desc: "Lorem ipsum dolor sit amet.",
+                launchURL: new URL("https://solible.com/#/"),
+            },
+        ]
+    },
+    
 ]
 
 const OverviewContainer : React.FC = () => {

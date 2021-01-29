@@ -22,8 +22,7 @@ const CategoryContainer: React.FC<CategoryProps> = ({categoryName, desc, apps}) 
     return <div>
         <CategoryHeader>{categoryName}</CategoryHeader>
         <CategoryText>{desc}</CategoryText>
-        {<CardContainer apps={apps}/>}
-        {/* {apps.map((app, index) => <AppCard key={index} {...app}/>)} */}
+        <CardContainer apps={apps}/>
     </div>
 }
 
