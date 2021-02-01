@@ -1,28 +1,18 @@
 import React from "react";
 
-import styled from "styled-components";
-
-import { Navbar, Button, Alignment } from "@blueprintjs/core";
-
-import logo from "../img/serum-logo.png"
-
-const StyledLogo = styled.img`
-    width:20px;
-`
-
-const StyledNavbar = styled(Navbar)`
-`
+import { Pane, Button, Heading } from 'evergreen-ui';
 
 const Header = () => {
     return(
-        <StyledNavbar className="bp3-dark">
-            <Navbar.Group align={Alignment.LEFT}>
-            <StyledLogo src={logo} alt="Logo"/>
-            <Navbar.Divider />
-            <Button className="bp3-minimal" icon="home" text="Home" />
-            <Button className="bp3-minimal" icon="document" text="Files" />
-        </Navbar.Group>
-        </StyledNavbar>
+        <Pane display="flex" padding={16} background="#F1FBFC" borderRadius={3}>
+            <Pane flex={1} alignItems="center" display="flex">
+                <Heading size={600}>Serum Appstore</Heading>
+            </Pane>
+            <Pane>
+                <Button marginRight={16}>Placeholder</Button>
+                <Button appearance="primary">Placeholder</Button>
+            </Pane>
+        </Pane>
     )
 }
 

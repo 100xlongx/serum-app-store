@@ -1,8 +1,9 @@
 import React from "react";
-import styled from "styled-components";
 
 import { AppCardProps } from "../Card/AppCard"
 import CardContainer from "../CardContainer";
+
+import { Pane, Heading, Paragraph } from 'evergreen-ui';
 
 export interface CategoryProps {
     categoryName: string,
@@ -10,20 +11,14 @@ export interface CategoryProps {
     apps: Array<AppCardProps>,
 }
 
-const CategoryHeader = styled.h1`
-    font-size: 25px
-`;
-
-const CategoryText = styled.p`
-    margin-bottom: 15px;
-`;
-
 const CategoryContainer: React.FC<CategoryProps> = ({categoryName, desc, apps}) => {
-    return <div>
-        <CategoryHeader>{categoryName}</CategoryHeader>
-        <CategoryText>{desc}</CategoryText>
+    return <Pane marginY='18px'>
+        <Pane>
+            <Heading size={800} marginTop='default'>{categoryName}</Heading>
+            <Paragraph marginTop="default">{desc}</Paragraph>
+        </Pane>
         <CardContainer apps={apps}/>
-    </div>
+    </Pane>
 }
 
 export default CategoryContainer;

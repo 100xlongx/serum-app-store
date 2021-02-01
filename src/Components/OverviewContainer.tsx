@@ -1,13 +1,9 @@
 import React from 'react';
-import styled from "styled-components";
+
 import CategoryContainer from './Category/CategoryContainer';
+import { CategoryProps } from "./Category/CategoryContainer"
 
-import {CategoryProps} from "./Category/CategoryContainer"
-
-const Overview = styled.div`
-    margin: auto 10%;
-    min-height: 100vh;
-`;
+import { Pane } from 'evergreen-ui';
 
 const Categories : Array<CategoryProps> = [
     {
@@ -63,9 +59,9 @@ const Categories : Array<CategoryProps> = [
 ]
 
 const OverviewContainer : React.FC = () => {
-    return <Overview>
+    return <Pane marginX='10%' marginY='auto' min-height='100vh'>
         {Categories.map((category, index) => <CategoryContainer key={index} {...category}/>)}
-    </Overview>
+    </Pane>
 }
 
 export default OverviewContainer;
