@@ -12,7 +12,7 @@ import { Pane } from 'evergreen-ui';
 
 function App() {
   return (
-    <Pane backgroundColor='aliceblue' className="App">
+    <Pane backgroundColor='purpleTint'>
       <Header />
       <OverviewContainer/>
     </Pane>

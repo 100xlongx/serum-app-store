@@ -12,8 +12,8 @@ export interface AppCardProps {
 
 const AppCard: FC<AppCardProps> = ({title, desc, launchURL}) => {
     return <Card
-    elevation={1}
-    hoverElevation={2}
+    elevation={2}
+    hoverElevation={3}
     float="left"
     width='auto'
     height='auto'
@@ -24,6 +24,7 @@ const AppCard: FC<AppCardProps> = ({title, desc, launchURL}) => {
     flexDirection="column"
     background='blueTint'
     onClick={() => window.location.href=launchURL.href}
+    cursor="pointer"
   >
     <Heading margin='8px'>{title}</Heading>
     {/* <Image width='100%' margin='12px' src='https://via.placeholder.com/250x125.png?text=placeholder'/> */}

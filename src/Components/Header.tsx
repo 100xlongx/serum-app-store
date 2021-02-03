@@ -4,9 +4,9 @@ import { Pane, Button, Heading } from 'evergreen-ui';
 
 const Header = () => {
     return(
-        <Pane display="flex" padding={16} background="tint2" borderRadius={3}>
+        <Pane display="flex" padding={16} background="rgb(24, 27, 98)">
             <Pane flex={1} alignItems="center" display="flex">
-                <Heading size={600}>Serum Appstore</Heading>
+                <Heading color='white' size={600}>Serum Appstore</Heading>
             </Pane>
             <Pane>
                 <Button marginRight={16}>Placeholder</Button>
