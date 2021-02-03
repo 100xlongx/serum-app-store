@@ -8,12 +8,14 @@ import './App.css';
 import Header from "./Components/Header";
 import OverviewContainer from "./Components/OverviewContainer";
 
+import { Pane } from 'evergreen-ui';
+
 function App() {
   return (
-    <div className="App">
+    <Pane backgroundColor='aliceblue' className="App">
       <Header />
       <OverviewContainer/>
-    </div>
+    </Pane>
   );
 }
 
