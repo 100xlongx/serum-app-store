@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-import { Card, Heading, Text, Image } from 'evergreen-ui';
+import { Pane, Heading, Text, Image } from 'evergreen-ui';
 
 import bonfida from '../../img/bonfida.jpg';
 
@@ -11,26 +11,25 @@ export interface AppCardProps {
 }
 
 const AppCard: FC<AppCardProps> = ({title, desc, launchURL}) => {
-    return <Card
-    elevation={2}
-    hoverElevation={3}
+    return <Pane
+    hoverElevation={2}
     float="left"
     width='auto'
     height='auto'
-    margin={24}
+    margin={18}
     display="flex"
     justifyContent="center"
     alignItems="center"
     flexDirection="column"
-    background='blueTint'
+    background='#161b19'
     onClick={() => window.location.href=launchURL.href}
     cursor="pointer"
   >
-    <Heading margin='8px'>{title}</Heading>
+    <Heading color='white' margin='4%'>{title}</Heading>
     {/* <Image width='100%' margin='12px' src='https://via.placeholder.com/250x125.png?text=placeholder'/> */}
     <Image width='100%' src={bonfida}/>
-    <Text margin='8px' size={300}>{desc}</Text>
-  </Card>
+    <Text margin='8px' color='rgb(128, 128, 128)' size={300}>{desc}</Text>
+  </Pane>
 }
 
 export {AppCard};

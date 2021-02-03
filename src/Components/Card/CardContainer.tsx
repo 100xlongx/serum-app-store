@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 
-import {AppCard, AppCardProps} from "./Card/AppCard";
+import {AppCard, AppCardProps} from "./AppCard";
 
 const Container = styled.div`
   display: grid;
