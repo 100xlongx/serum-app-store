@@ -16,10 +16,10 @@ const Header: React.FC = () => {
             urlSuffix: '',
             buttonText: 'Home'
         },
-        {
-            urlSuffix: 'twitter',
-            buttonText: 'Twitter'
-        },
+        // {
+        //     urlSuffix: 'twitter',
+        //     buttonText: 'Twitter'
+        // },
         {
             urlSuffix: 'medium',
             buttonText: 'Medium'

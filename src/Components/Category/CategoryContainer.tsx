@@ -22,7 +22,7 @@ const CategoryContainer: React.FC<CategoryProps> = ({categoryName, desc, apps}) 
     paddingTop= '5px'
     marginY= '18px'>
         <Pane>
-            <Heading color='white' size={800} marginTop='default'>{categoryName}</Heading>
+            <Heading color='white' size={800} marginLeft='18px' marginTop='default'>{categoryName}</Heading>
             <Heading color='rgb(128, 128, 128)' size={400} marginTop="8px">{desc}</Heading>
         </Pane>
         <CardContainer apps={apps}/>
