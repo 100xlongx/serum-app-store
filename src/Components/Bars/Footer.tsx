@@ -1,13 +1,13 @@
 import React from "react";
 
-import { Pane, Heading, Link } from 'evergreen-ui';
+import { Pane, Link } from 'evergreen-ui';
 
-interface Link {
+interface LinkProps {
     url: string,
     text: string
 }
 
-const SerumLinks: Array<Link> = [
+const SerumLinks: Array<LinkProps> = [
     {
         url: "https://solanabeach.io/",
         text: "Solana Network"

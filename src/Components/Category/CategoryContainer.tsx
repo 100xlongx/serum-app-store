@@ -3,12 +3,13 @@ import React from "react";
 import { AppCardProps } from "../Card/AppCard"
 import CardContainer from "../Card/CardContainer";
 
-import { Pane, Heading, Paragraph } from 'evergreen-ui';
+import { Pane, Heading } from 'evergreen-ui';
 
 export interface CategoryProps {
     categoryName: string,
-    desc?: string,
     apps: Array<AppCardProps>,
+    image?: string,
+    desc?: string,
 }
 
 const CategoryContainer: React.FC<CategoryProps> = ({categoryName, desc, apps}) => {

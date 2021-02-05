@@ -3,6 +3,13 @@ import React from 'react';
 import CategoryContainer from './Category/CategoryContainer';
 import { CategoryProps } from "./Category/CategoryContainer"
 
+import BonfidaImg from "../assets/images/bonfida.jpg"
+import SolflareImg from "../assets/images/solflare.jpg"
+import Coin98Img from "../assets/images/coin98.jpg"
+import EzDefiImg from "../assets/images/EzDefi.png"
+import SolongImg from "../assets/images/Solong.png"
+import AiImg from "../assets/images/ai.png"
+
 import { Pane } from 'evergreen-ui';
 
 const Categories : Array<CategoryProps> = [
@@ -13,16 +20,18 @@ const Categories : Array<CategoryProps> = [
                 title: "Bonfida Serum DEX",
                 desc: "All in one platform for data driven crypto traders.",
                 launchURL: new URL("https://bonfida.com/dex"),
+                image: BonfidaImg,
 
             },
             {
                 title: "Cryptocurrencies.Ai DEX",
                 desc: "Exchange with built-in tools for automation, customization and performance analysis.",
                 launchURL: new URL("https://dex.cryptocurrencies.ai/"),
+                image: AiImg,
             },
             {
                 title: "Project Serum DEX",
-                desc: "Lorem ipsum dolor sit amet.",
+                desc: "The world's first completely decentralized derivatives exchange with trustless cross-chain trading.",
                 launchURL: new URL("https://coin98.app/"),
             }
         ]
@@ -34,6 +43,7 @@ const Categories : Array<CategoryProps> = [
                 title: "Solong",
                 desc: "Browser extension for managing Solana assets and dapps",
                 launchURL: new URL("https://solongwallet.com"),
+                image: SolongImg,
             },
             {
                 title: "Sollet.io",
@@ -43,22 +53,26 @@ const Categories : Array<CategoryProps> = [
             {
                 title: "Solflare",
                 desc: "Non-custodial web wallet",
-                launchURL: new URL("https://solflare.com/")
+                launchURL: new URL("https://solflare.com/"),
+                image: SolflareImg,
             },
             {
                 title: "Bonfida Wallet",
                 desc: "Web wallet created Bonfida",
-                launchURL: new URL("https://bonfida.com/wallet/")
+                launchURL: new URL("https://bonfida.com/wallet/"),
+                image: BonfidaImg,
             },
             {
                 title: "EzDeFi",
                 desc: "Mobile wallet and browser extension.",
-                launchURL: new URL("https://ezdefi.com/")
+                launchURL: new URL("https://ezdefi.com/"),
+                image: EzDefiImg,
             },
             {
                 title: "Coin98",
                 desc: "Mobile wallet available on Android and iOS",
-                launchURL: new URL("https://coin98.app/")
+                launchURL: new URL("https://coin98.app/"),
+                image: Coin98Img,
             }
         ]
     },

@@ -10,9 +10,10 @@ export interface AppCardProps {
     title: string,
     desc: string,
     launchURL: URL,
+    image?: string,
 }
 
-const AppCard: FC<AppCardProps> = ({title, desc, launchURL}) => {
+const AppCard: FC<AppCardProps> = ({title, desc, launchURL, image}) => {
     return <Pane
     hoverElevation={2}
     float="left"
@@ -29,7 +30,7 @@ const AppCard: FC<AppCardProps> = ({title, desc, launchURL}) => {
   >
     <Heading color='white' margin='4%'>{title}</Heading>
     {/* <Image width='100%' margin='12px' src='https://via.placeholder.com/250x125.png?text=placeholder'/> */}
-    <Image margin='5%' width='80%' src={SerumLogo}/>
+    <Image margin='5%' width='80%' src={image ? image : SerumLogo}/>
     <Text margin='8px' color={primaryTextColor} size={300}>{desc}</Text>
   </Pane>
 }
