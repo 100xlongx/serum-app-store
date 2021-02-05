@@ -12,17 +12,35 @@ import { Pane } from 'evergreen-ui';
 import InformationContainer from './Components/InformationContainer';
 import Footer from './Components/Bars/Footer';
 
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 const headerColor = '#1e2423';
 const backgroundColor = '#161b19'
 
 function App() {
   return (
-    <Pane className='app' backgroundColor={backgroundColor}>
-      <Header />
-      <InformationContainer/>
-      <OverviewContainer/>
-      <Footer/>
-    </Pane>
+    <Router>
+      <Pane className='app' backgroundColor={backgroundColor}>
+        <Header />
+        <InformationContainer/>
+
+        <Switch>
+          <Route exact path="/">
+            <OverviewContainer/>
+          </Route>
+          <Route path="/socials">
+            <p>ok</p>
+          </Route>
+        </Switch>
+
+        <Footer/>
+      </Pane>
+    </Router>
   );
 }
 

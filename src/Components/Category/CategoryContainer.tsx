@@ -7,7 +7,7 @@ import { Pane, Heading, Paragraph } from 'evergreen-ui';
 
 export interface CategoryProps {
     categoryName: string,
-    desc: string,
+    desc?: string,
     apps: Array<AppCardProps>,
 }
 
@@ -21,7 +21,7 @@ const CategoryContainer: React.FC<CategoryProps> = ({categoryName, desc, apps}) 
     marginY= '18px'>
         <Pane>
             <Heading color='white' size={800} marginTop='default'>{categoryName}</Heading>
-            <Paragraph color='rgb(128, 128, 128)' marginTop="default">{desc}</Paragraph>
+            <Heading color='rgb(128, 128, 128)' size={400} marginTop="8px">{desc}</Heading>
         </Pane>
         <CardContainer apps={apps}/>
     </Pane>

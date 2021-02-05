@@ -2,7 +2,9 @@ import React, { FC } from "react";
 
 import { Pane, Heading, Text, Image } from 'evergreen-ui';
 
-import bonfida from '../../img/bonfida.jpg';
+import { primaryTextColor } from '../Shared/Color';
+
+import SerumLogo from '../../assets/images/serum-logo.png'
 
 export interface AppCardProps {
     title: string,
@@ -27,8 +29,8 @@ const AppCard: FC<AppCardProps> = ({title, desc, launchURL}) => {
   >
     <Heading color='white' margin='4%'>{title}</Heading>
     {/* <Image width='100%' margin='12px' src='https://via.placeholder.com/250x125.png?text=placeholder'/> */}
-    <Image width='100%' src={bonfida}/>
-    <Text margin='8px' color='rgb(128, 128, 128)' size={300}>{desc}</Text>
+    <Image margin='5%' width='80%' src={SerumLogo}/>
+    <Text margin='8px' color={primaryTextColor} size={300}>{desc}</Text>
   </Pane>
 }
 

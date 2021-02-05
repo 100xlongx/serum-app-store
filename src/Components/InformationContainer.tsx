@@ -14,9 +14,9 @@ const InformationContainer: React.FC = () => {
     marginY= '18px'>
 
     <Heading margin-left='auto' size={900} color='white'>Serum: Faster, Cheaper and more Powerful DeFi</Heading>
-    <Paragraph>We could probably put links to important information/social media/community related stuff here </Paragraph>
-    <Paragraph>Or query for token related data from coingecko API</Paragraph>
-    <Paragraph>Or delete this entire box because it's not really that essential</Paragraph>
+    <Paragraph color='rgb(128, 128, 128)'>We could probably put links to important information/social media/community related stuff here </Paragraph>
+    <Paragraph color='rgb(128, 128, 128)'>Or query for token related data from coingecko API</Paragraph>
+    <Paragraph color='rgb(128, 128, 128)'>Or delete this entire box because it's not really that essential</Paragraph>
 
     </Pane>
 }

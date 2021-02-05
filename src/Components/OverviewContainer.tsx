@@ -7,8 +7,7 @@ import { Pane } from 'evergreen-ui';
 
 const Categories : Array<CategoryProps> = [
     {
-        categoryName: "DEX",
-        desc: `Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues. It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un simplificat Angles, quam un skeptic Cambridge amico dit me que Occidental es.`,
+        categoryName: "Decentralized Exchanges",
         apps: [
             {
                 title: "Bonfida Serum DEX",
@@ -18,11 +17,11 @@ const Categories : Array<CategoryProps> = [
             },
             {
                 title: "Cryptocurrencies.Ai DEX",
-                desc: "Lorem ipsum dolor sit amet.",
+                desc: "Exchange with built-in tools for automation, customization and performance analysis.",
                 launchURL: new URL("https://dex.cryptocurrencies.ai/"),
             },
             {
-                title: "Coin98",
+                title: "Project Serum DEX",
                 desc: "Lorem ipsum dolor sit amet.",
                 launchURL: new URL("https://coin98.app/"),
             }
@@ -30,28 +29,61 @@ const Categories : Array<CategoryProps> = [
     },
     {
         categoryName: "Wallets",
-        desc: `Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
         apps: [
             {
                 title: "Solong",
-                desc: "Lorem ipsum dolor sit amet.",
+                desc: "Browser extension for managing Solana assets and dapps",
                 launchURL: new URL("https://solongwallet.com"),
             },
             {
                 title: "Sollet.io",
-                desc: "Lorem ipsum dolor sit amet.",
+                desc: "Web based wallet for storing assets.",
                 launchURL: new URL("https://www.sollet.io"),
             },
+            {
+                title: "Solflare",
+                desc: "Non-custodial web wallet",
+                launchURL: new URL("https://solflare.com/")
+            },
+            {
+                title: "Bonfida Wallet",
+                desc: "Web wallet created Bonfida",
+                launchURL: new URL("https://bonfida.com/wallet/")
+            },
+            {
+                title: "EzDeFi",
+                desc: "Mobile wallet and browser extension.",
+                launchURL: new URL("https://ezdefi.com/")
+            },
+            {
+                title: "Coin98",
+                desc: "Mobile wallet available on Android and iOS",
+                launchURL: new URL("https://coin98.app/")
+            }
         ]
     },
     {
         categoryName: "NFT",
-        desc: `Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
         apps: [
             {
                 title: "Solible",
-                desc: "Lorem ipsum dolor sit amet.",
+                desc: "Marketplace for redeemable NFTs",
                 launchURL: new URL("https://solible.com/#/"),
+            },
+        ]
+    },
+    {
+        categoryName: "AMM",
+        apps: [
+            {
+                title: "Swap",
+                desc: "Fully on-chain and noncustodial AMM",
+                launchURL: new URL("https://swap.projectserum.com/"),
+            },
+            {
+                title: "SAMM",
+                desc: "A constant-product market making bot for Serum",
+                launchURL: new URL("https://gitlab.com/OpinionatedGeek/samm"),
             },
         ]
     },
