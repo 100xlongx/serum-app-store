@@ -3,7 +3,7 @@ import React from "react";
 import { Timeline } from "react-twitter-widgets";
 
 const TwitterContainer: React.FC = () => {
-    return <Pane display='flex' marginX='10%' justifyContent='center' alignContent='center'>
+    return <Pane display='flex' marginX='10%' marginBottom='24px' justifyContent='center' alignContent='center'>
 
     <Timeline
     dataSource={{
@@ -11,8 +11,7 @@ const TwitterContainer: React.FC = () => {
         screenName: 'ProjectSerum'
     }}
     options={{
-        height: '400',
-        width: '800',
+        width: '1200',
         theme: 'dark'
     }}
 />

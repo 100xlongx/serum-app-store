@@ -8,6 +8,7 @@ import { Pane, Heading } from 'evergreen-ui';
 export interface CategoryProps {
     categoryName: string,
     apps: Array<AppCardProps>,
+    bonusApps?: Array<AppCardProps>,
     image?: string,
     desc?: string,
 }
