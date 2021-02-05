@@ -14,7 +14,7 @@ const Header: React.FC = () => {
     const Buttons : Array<LinkButtonProps> = [
         {
             urlSuffix: '',
-            buttonText: 'Home'
+            buttonText: 'Applications'
         },
         // {
         //     urlSuffix: 'twitter',

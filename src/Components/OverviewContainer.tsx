@@ -32,7 +32,7 @@ const Categories : Array<CategoryProps> = [
             {
                 title: "Project Serum DEX",
                 desc: "The world's first completely decentralized derivatives exchange with trustless cross-chain trading.",
-                launchURL: new URL("https://coin98.app/"),
+                launchURL: new URL("https://dex.projectserum.com/"),
             }
         ]
     },
