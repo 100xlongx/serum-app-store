@@ -1,9 +1,3 @@
-.a
-{
-   color: #3ecaca;
-   text-decoration: none;
-}
-
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -14,4 +8,12 @@
 
 body {
   font-family: 'Open Sans';
+}
+
+a {
+  text-decoration: none;
+}
+
+a.linkbox:hover {
+  color: aquamarine;
 }
