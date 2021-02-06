@@ -29,7 +29,6 @@ const AppCard: FC<AppCardProps> = ({title, desc, launchURL, image}) => {
     cursor="pointer"
   >
     <Heading color='#33a382' margin='4%'>{title}</Heading>
-    {/* <Image width='100%' margin='12px' src='https://via.placeholder.com/250x125.png?text=placeholder'/> */}
     <Image margin='5%' width='80%' src={image ? image : SerumLogo}/>
     <Text margin='8px' color={primaryTextColor} size={300}>{desc}</Text>
   </Pane>
