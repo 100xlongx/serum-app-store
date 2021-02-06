@@ -26,7 +26,7 @@ function App() {
     <Router>
       <Pane className='app' backgroundColor={backgroundColor}>
         <Header />
-        <InformationContainer/>
+        {/* <InformationContainer/> */}
         <Switch>
           <Route exact path="/">
             <OverviewContainer/>

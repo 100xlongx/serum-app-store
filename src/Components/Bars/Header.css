@@ -1,0 +1,12 @@
+a:hover, a:active {
+    background-color: red;
+}
+
+a {
+    text-decoration: none;
+}
+
+.test {
+    color:cornflowerblue;
+    text-decoration: none;
+}
