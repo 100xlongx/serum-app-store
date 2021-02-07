@@ -9,8 +9,14 @@ body {
 a {
     color: #33a382;
     text-overflow: ellipsis;
+    overflow-x:hidden;
 }
 
 p {
     text-overflow: ellipsis;
+}
+
+.paragraph {
+    text-overflow: ellipsis;
+    overflow-x:hidden;
 }
