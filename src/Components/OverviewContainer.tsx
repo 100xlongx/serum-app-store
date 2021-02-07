@@ -10,6 +10,8 @@ import EzDefiImg from "../assets/images/EzDefi.png"
 import SolongImg from "../assets/images/Solong.png"
 import AiImg from "../assets/images/ai.png"
 
+import {useMediaQuery} from "react-responsive";
+
 import { Pane } from 'evergreen-ui';
 
 const Categories : Array<CategoryProps> = [
@@ -105,7 +107,10 @@ const Categories : Array<CategoryProps> = [
 ]
 
 const OverviewContainer : React.FC = () => {
-    return <Pane marginX='10%' marginY='auto' min-height='100vh'>
+
+    const isDesktop = useMediaQuery({ minWidth: 992 })
+
+    return <Pane marginX={isDesktop ? '10%' : ''} marginY='auto' min-height='100vh'>
         {Categories.map((category, index) => <CategoryContainer key={index} {...category}/>)}
     </Pane>
 }

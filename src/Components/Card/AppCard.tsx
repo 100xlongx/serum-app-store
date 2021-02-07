@@ -28,8 +28,9 @@ const AppCard: FC<AppCardProps> = ({title, desc, launchURL, image}) => {
     onClick={() => window.location.href=launchURL.href}
     cursor="pointer"
   >
-    <Heading color='#33a382' margin='4%'>{title}</Heading>
-    <Image margin='5%' width='80%' src={image ? image : SerumLogo}/>
+    <Pane display='flex' padding='8px'justifyContent='center' alignContent='center'><Heading color='#33a382'>{title}</Heading></Pane>
+    
+    <Image margin='8px' width='80%' src={image ? image : SerumLogo}/>
     <Text margin='8px' color={primaryTextColor} size={300}>{desc}</Text>
   </Pane>
 }
