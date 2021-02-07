@@ -10,7 +10,7 @@ import EzDefiImg from "../assets/images/EzDefi.png"
 import SolongImg from "../assets/images/Solong.png"
 import AiImg from "../assets/images/ai.png"
 
-import {useMediaQuery} from "react-responsive";
+import { useMediaQuery } from "react-responsive";
 
 import { Pane } from 'evergreen-ui';
 
