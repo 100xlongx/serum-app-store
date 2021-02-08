@@ -17,6 +17,7 @@ const CategoryContainer: React.FC<CategoryProps> = ({categoryName, desc, apps}) 
     return <Pane
     borderRadius={3}
     background='#1e2423'
+    height='100%'
     paddingX='20px'
     paddingBottom='5px'
     paddingTop= '5px'

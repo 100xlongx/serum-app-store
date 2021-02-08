@@ -26,6 +26,8 @@ const CardContainer: React.FC<CardContainerProps> = ({apps}) => {
     grid-template-columns: ${isDesktop ? '1fr 1fr 1fr 1fr 1fr' : '1fr'};
     grid-column-gap: 1%;
     grid-row-gap: 1%;
+    height: 100%;
+    margin-bottom: 16px;
     `;
 
     return <Container> 
