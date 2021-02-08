@@ -21,12 +21,19 @@ const CardContainer: React.FC<CardContainerProps> = ({apps}) => {
 
     const isDesktop = useMediaQuery({ minWidth: 992 })
 
+    // const Container = styled.div`
+    // display: grid;
+    // grid-template-columns: ${isDesktop ? '1fr 1fr 1fr 1fr 1fr' : '1fr 1fr'};
+    // grid-column-gap: 1%;
+    // grid-row-gap: 1%;
+    // height: 100%;
+    // margin-bottom: 16px;
+    // `;
+
     const Container = styled.div`
     display: grid;
-    grid-template-columns: ${isDesktop ? '1fr 1fr 1fr 1fr 1fr' : '1fr'};
-    grid-column-gap: 1%;
-    grid-row-gap: 1%;
-    height: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem;
     margin-bottom: 16px;
     `;
 
