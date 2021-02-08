@@ -13,6 +13,17 @@ export interface CategoryProps {
     desc?: string,
 }
 
+/*
+Category Container
+
+A Pane that will display an individual category and the corresponding card container.
+
+categoryName: Name of the category to display
+apps: an array of applications to pass to the appcard container
+bonusApps: apps to show in a 'show more' page
+image: the image to display to the user. default should be a Serum logo
+desc: the description to display at the bottom of the card
+*/
 const CategoryContainer: React.FC<CategoryProps> = ({categoryName, desc, apps}) => {
     return <Pane
     borderRadius={3}

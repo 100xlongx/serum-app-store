@@ -13,6 +13,17 @@ export interface AppCardProps {
     image?: string,
 }
 
+/*
+Component AppCard
+
+This component will display an application
+
+title: The title of the card
+desc: The text to display, describing the application.
+launchURL: the url to launch when a user selects the application
+image: The image to display. We will default to the SerumLogo if it isn't present
+*/
+
 const AppCard: FC<AppCardProps> = ({title, desc, launchURL, image}) => {
     return <Pane
     hoverElevation={2}
@@ -35,4 +46,4 @@ const AppCard: FC<AppCardProps> = ({title, desc, launchURL, image}) => {
   </Pane>
 }
 
-export {AppCard};
+export { AppCard };

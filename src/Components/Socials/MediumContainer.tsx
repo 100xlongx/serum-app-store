@@ -8,8 +8,6 @@ import Parser from 'html-react-parser';
 
 import {useMediaQuery} from "react-responsive";
 
-const mediumURL: string = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@projectserum';
-
 interface MediumPostProps {
     author: string,
     categories: Array<string>,
@@ -23,8 +21,14 @@ interface MediumPostProps {
     title: string
 }
 
+/*
+MediumContainer
+
+This component will fetch the data from the Medium article and map out each article to an individual pane for the user to read.
+*/
 const MediumContainer: React.FC = () => {
 
+    const mediumURL: string = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@projectserum';
     const [data, setData] = useState<Array<MediumPostProps> | null>([])
     const [isLoading, setLoading] = useState<Boolean>(true);
 
@@ -32,12 +36,9 @@ const MediumContainer: React.FC = () => {
         fetch(mediumURL)
         .then(res => res.json())
         .then(data => {
-            // const avatar = data.feed.image;
-            // const profileLink = data.feed.link;
             const res = data.items; //This is an array with the content. No feed, no info about author etc..
             const posts = res.filter((item : any)=> item.categories.length > 0);
 
-            console.log(posts);
             setData(posts);
             setLoading(false);
         })
@@ -52,8 +53,17 @@ const MediumContainer: React.FC = () => {
     }
 }
 
-const MediumPost: React.FC<MediumPostProps> = ({title, content, link}) => {
+/*
+MediumPost
 
+This container will display the articles received from the Medium API
+
+title: Title of the article
+content: The content of the article
+link: hyperlink that will direct a user to the actual article itself
+*/
+
+const MediumPost: React.FC<MediumPostProps> = ({title, content, link}) => {
     const isDesktop = useMediaQuery({ minWidth: 992 })
     
     return <Pane 
@@ -69,7 +79,6 @@ const MediumPost: React.FC<MediumPostProps> = ({title, content, link}) => {
     marginY= '18px'
     marginX= {isDesktop ? '20%' : ''}>
         <Heading onClick={() => {window.location.href=link}} cursor="pointer" marginBottom='12px' size={900} color={'#33a382'}>{title}</Heading>
-        {/* <img width="100%" src={thumbnail}></img> */}
         <div className='paragraph'>{Parser(content)}</div>
     </Pane>
 }

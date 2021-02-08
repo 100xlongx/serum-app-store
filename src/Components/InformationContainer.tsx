@@ -5,6 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons'
 import { faGithubSquare, faTelegram, faDiscord, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
+
+/*
+InformationContainer
+
+This component is unused right now. Just to display information about Serum.
+
+*/
 const InformationContainer: React.FC = () => {
 
     interface IconProps {
@@ -42,7 +49,7 @@ const InformationContainer: React.FC = () => {
     padding='80px'
     marginY= '18px'>
 
-        <Heading size={900} marginBottom="18px" color='white'>Serum: Faster, Cheaper and more Powerful DeFi </Heading>
+        <Heading size={900} marginBottom="1rem" color='white'>Serum: Faster, Cheaper and more Powerful DeFi </Heading>
         
         <Pane display='flex' justifyContent='center'>
             {Icons.map((icon, index) => <Heading marginRight='18px' key={'icon_' + index} size={900} color="#40C8DB"><FontAwesomeIcon cursor="pointer" onClick={() => window.location.href=icon.url} icon={icon.icon}/></Heading>)}

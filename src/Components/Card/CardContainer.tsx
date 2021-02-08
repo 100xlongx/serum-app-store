@@ -1,45 +1,24 @@
 import React from 'react';
-import styled from "styled-components";
-
-import { useMediaQuery } from 'react-responsive'
 
 import {AppCard, AppCardProps} from "./AppCard";
 
-
+import { Pane } from 'evergreen-ui';
 
 interface CardContainerProps {
     apps: Array<AppCardProps>
 }
 
-
-
+/*
+*/
 const CardContainer: React.FC<CardContainerProps> = ({apps}) => {
-    // const isDesktopOrLaptop = useMediaQuery(
-    //     { minDeviceWidth: 1224 },
-    //     { deviceWidth: 1600 } // `device` prop
-    //  )
 
-    const isDesktop = useMediaQuery({ minWidth: 992 })
-
-    // const Container = styled.div`
-    // display: grid;
-    // grid-template-columns: ${isDesktop ? '1fr 1fr 1fr 1fr 1fr' : '1fr 1fr'};
-    // grid-column-gap: 1%;
-    // grid-row-gap: 1%;
-    // height: 100%;
-    // margin-bottom: 16px;
-    // `;
-
-    const Container = styled.div`
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 1rem;
-    margin-bottom: 16px;
-    `;
-
-    return <Container> 
+    return <Pane
+    display="grid"
+    gridTemplateColumns="repeat(auto-fill, minmax(200px, 1fr))"
+    marginBottom = '0.5em'
+    > 
         {apps.map((app, index) => <AppCard key={index} {...app}/>)} 
-    </Container>;
+    </Pane>;
 }
 
 export default CardContainer;

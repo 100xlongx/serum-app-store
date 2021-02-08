@@ -5,7 +5,7 @@ import { CategoryProps } from "./Category/CategoryContainer"
 
 import BonfidaImg from "../assets/images/bonfida.jpg"
 import SolflareImg from "../assets/images/solflare.jpg"
-import Coin98Img from "../assets/images/coin98.jpg"
+import Coin98Img from "../assets/images/coin98.png"
 import EzDefiImg from "../assets/images/EzDefi.png"
 import SolongImg from "../assets/images/Solong.png"
 import AiImg from "../assets/images/ai.png"
@@ -60,7 +60,7 @@ const Categories : Array<CategoryProps> = [
             },
             {
                 title: "Bonfida Wallet",
-                desc: "Web wallet created Bonfida",
+                desc: "Web wallet created by Bonfida",
                 launchURL: new URL("https://bonfida.com/wallet/"),
                 image: BonfidaImg,
             },
@@ -106,9 +106,13 @@ const Categories : Array<CategoryProps> = [
     
 ]
 
-const OverviewContainer : React.FC = () => {
+/*
+Component OverviewContainer
 
-    const isDesktop = useMediaQuery({ minWidth: 992 })
+A container to display all the categories.
+*/
+const OverviewContainer : React.FC = () => {
+    const isDesktop : boolean = useMediaQuery({ minWidth: 992 })
 
     return <Pane marginX={isDesktop ? '10%' : ''} marginY='auto' min-height='100vh'>
         {Categories.map((category, index) => <CategoryContainer key={index} {...category}/>)}
