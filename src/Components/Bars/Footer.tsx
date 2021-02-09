@@ -40,7 +40,7 @@ const SerumLinks: Array<LinkProps> = [
 
 const Footer: React.FC = () => {
 
-    const isDesktop = useMediaQuery({ minWidth: 992 })
+    const isDesktop : boolean = useMediaQuery({ minWidth: 992 })
 
     return(
         <Pane width='100%' overflow='clip' display="flex" padding={16} background="#1e2423">

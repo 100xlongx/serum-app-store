@@ -1,18 +1,15 @@
 import React from "react";
 
-import { Pane, Image, Link } from 'evergreen-ui';
-
+import { Pane, Image } from 'evergreen-ui';
 import { Link as RouterLink } from 'react-router-dom';
 
 import logo from "../../assets/images/serum192.png";
-
 import SocialMediaIcons from "../Socials/SocialMediaIcons";
-
 import { useMediaQuery } from "react-responsive";
 
 const Header: React.FC = () => {
 
-    const isDesktop = useMediaQuery({ minWidth: 992 })
+    const isDesktop : boolean = useMediaQuery({ minWidth: 992 })
 
     return(
         <Pane display="flex" padding={16} background="#1e2423" alignItems="center">

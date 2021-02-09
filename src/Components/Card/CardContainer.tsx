@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {AppCard, AppCardProps} from "./AppCard";
+import { AppCard, AppCardProps } from "./AppCard";
 
 import { Pane } from 'evergreen-ui';
 
@@ -9,6 +9,11 @@ interface CardContainerProps {
 }
 
 /*
+Card Container Component
+
+Container for the card apps.
+
+apps: an array of applications
 */
 const CardContainer: React.FC<CardContainerProps> = ({apps}) => {
 
